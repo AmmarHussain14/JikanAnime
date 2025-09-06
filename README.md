@@ -106,9 +106,13 @@ Android Jetpack Components
 📂 Project Structure
 app/
  ├── data/          # API services, Room database, repositories
+ 
  ├── model/         # Data models (Anime, Characters, etc.)
+ 
  ├── ui/            # Activities, Fragments, Adapters
+ 
  ├── viewmodel/     # MVVM ViewModels
+ 
  ├── utils/         # Utility classes & helpers
 
 ⚡ Getting Started
