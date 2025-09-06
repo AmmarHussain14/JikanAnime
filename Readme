@@ -1,0 +1,163 @@
+Jikan Anime App 🎬
+
+An Android application built as part of Seekho’s assignment.
+The app fetches and displays anime data using the Jikan API
+, with support for anime listing, details view, offline mode, and error handling.
+
+🚀 Features
+1. Anime List Page
+
+Fetches Top Anime from Jikan API
+
+Displays:
+
+Title
+
+Number of Episodes
+
+Rating (MyAnimeList score)
+
+Poster Image
+
+API Endpoint: https://api.jikan.moe/v4/top/anime
+
+2. Anime Detail Page
+
+Opens on clicking an anime item
+
+Displays:
+
+Trailer video (or poster if unavailable)
+
+Title
+
+Plot / Synopsis
+
+Genres
+
+Main Cast
+
+Number of Episodes
+
+Rating
+
+API Endpoint: https://api.jikan.moe/v4/anime/{anime_id}
+
+3. Local Database with Room (Bonus)
+
+Stores fetched anime data locally
+
+Supports offline availability
+
+Data syncs automatically when online
+
+4. Offline Mode & Syncing
+
+Works even without internet connection
+
+Syncs updates with server when reconnected
+
+5. Error Handling
+
+Graceful error messages for:
+
+API failures
+
+Database operations
+
+Network issues
+
+6. Clean Architecture (MVVM)
+
+MVVM architecture with separation of concerns
+
+Uses modern Android libraries:
+
+Retrofit → API calls
+
+Glide / Picasso → Image loading
+
+Room → Local database
+
+LiveData / StateFlow → Reactive data handling
+
+7. UI/UX Design
+
+Handles constraints (e.g., hiding profile images if restricted)
+
+Intuitive and responsive layout
+
+🛠️ Tech Stack
+
+Kotlin (primary language)
+
+MVVM Architecture
+
+Retrofit – REST API integration
+
+Glide / Picasso – Image loading
+
+Room – Local persistence
+
+LiveData / StateFlow – Reactive data flow
+
+Android Jetpack Components
+
+📂 Project Structure
+app/
+ ├── data/          # API services, Room database, repositories
+ ├── model/         # Data models (Anime, Characters, etc.)
+ ├── ui/            # Activities, Fragments, Adapters
+ ├── viewmodel/     # MVVM ViewModels
+ ├── utils/         # Utility classes & helpers
+
+⚡ Getting Started
+Prerequisites
+
+Android Studio Iguana+
+
+JDK 17
+
+Gradle 8+
+
+Steps
+
+Clone the repository:
+
+git clone https://github.com/yourusername/JikanAnime.git
+cd JikanAnime
+
+
+Open project in Android Studio
+
+Sync Gradle dependencies
+
+Run the app on emulator / device
+
+🤔 Assumptions Made
+
+Top Anime API is sufficient for initial listing
+
+Offline caching is handled via Room
+
+Trailers may not always be available, fallback to poster image
+
+⚠️ Known Limitations
+
+Limited error messages (basic handling only)
+
+Offline sync may not handle all edge cases
+
+UI is kept minimalistic (can be improved with Material3 / Compose)
+
+📱 Demo
+
+(Add screenshots / GIFs here if available)
+
+📌 Deliverables
+
+✅ Full source code in this repo
+
+✅ README.md (this file)
+
+⚡ APK build (optional, can be added under releases/)
