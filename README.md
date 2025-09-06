@@ -1,4 +1,4 @@
-ikan Anime App 🎬
+Jikan Anime App 🎬
 
 An Android application built as part of Seekho’s assignment.
 The app fetches and displays anime data using the Jikan API
