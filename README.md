@@ -162,7 +162,5 @@ UI is kept minimalistic (can be improved with Material3 / Compose)
 
 ✅ Full source code in this repo
 
-✅ README.md (this file)
 
-⚡ APK build (optional, can be added under releases/)
 
