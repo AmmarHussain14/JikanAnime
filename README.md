@@ -162,8 +162,3 @@ UI is kept minimalistic (can be improved with Material3 / Compose)
 
 ⚡ APK build (optional, can be added under releases/)
 
-🕒 Time Estimate
-
-Core functionality: 4–6 hours
-
-Bonus features (Room + Offline sync): 2–3 hours
